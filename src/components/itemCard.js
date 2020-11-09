@@ -1,7 +1,30 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { View, Text, StyleSheet, Image, Button } from "react-native";
 
+import axios from "axios";
+
 const ItemCard = ({ item }) => {
+  const [code, setCode] = React.useState("");
+
+  useEffect(() => {
+    handleGetCode();
+  });
+
+  const handleGetCode = async () => {
+    try {
+      const res = await axios.get(
+        "https://coupons-app-backend.herokuapp.com/api/coupons"
+      );
+
+      if (res.data.success) {
+        return setCode(res.data.success);
+      }
+      setCode("No Codes avilable at the moment, Please Check later");
+    } catch (e) {
+      setCode("No Codes avilable at the moment, Please Check later");
+    }
+  };
+
   return (
     <View style={styles.card}>
       <View style={styles.cardHeader}>
@@ -27,7 +50,7 @@ const ItemCard = ({ item }) => {
         <Button
           title="Discount"
           color="black"
-          onPress={() => alert("Your coupon is 1234")}
+          onPress={() => alert(`${code}`)}
         />
         <View>
           <Text>1585 Favourites</Text>

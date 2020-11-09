@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "467362026281",
+    "firebase_url": "https://coupons-cd17c.firebaseio.com",
+    "project_id": "coupons-cd17c",
+    "storage_bucket": "coupons-cd17c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:467362026281:android:4ad6c24dafde9c68749d38",
+        "android_client_info": {
+          "package_name": "epicore.couons.task"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "467362026281-h1hqkuoojf3jmc6tf2gvkqce5ihtslnn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB6_ebFZRxJ4QupM7E5FNUBALa7pYyb6zk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "467362026281-h1hqkuoojf3jmc6tf2gvkqce5ihtslnn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
